@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <title></title>
-  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="styles/style.css" />
   <meta name="viewport" content="width=device-width" />
 </head>
 
@@ -15,36 +15,63 @@
       <a href="index.html"><img src="images/logoSeul.png" alt="logoAcceuil" class="logoAcceuil"></a>
     </div>
 
-    <div class="navigation">
-      <div class="nav">
-        <a href="#"><span>A propos</span></a>
-        <a href="#"><span>Gallerie</span></a>
-        <a href="#"><span>Inspiration</span></a>
-        <a href="#"><span>Contact</span></a>
-      </div>
-
-      <div>
-        <img src="images/26.png" class="photoDescription">
-      </div>
-
-      <div class="description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad adipisci in libero illum, similique nesciunt
-          sequi officiis expedita tempora possimus, ipsum omnis accusantium minus rem non doloribus! Dolores, cupiditate
-          ?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique quae adipisci numquam totam libero saepe
-          perferendis unde ut ipsa quam culpa necessitatibus minima quia commodi quibusdam reiciendis voluptatum, ad.Lorem
-          ipsum dolor sit amet, consectetur adipisicing elit. Deleniti doloribus aut consequatur facilis, dolores culpa recusandae
-          consequuntur magnam suscipit nulla fugit eius vitae minima vel, quas blanditiis ex placeat adipisci.Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Veritatis doloremque praesentium, fugiat harum fugit quo consectetur
-          voluptatibus earum consequatur dolorum vero enim adipisci vel placeat! Dolorem non harum, animi debitis.</p>
-      </div>
-
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="hiddenReponsive">A propos</a>
+      <a href="#news">Gallerie</a>
+      <a href="#contact">Inspiration</a>
+      <a href="#about">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+    </script>
   </header>
 
-  <footer>
-    <div class="footer">
-
+  <main>
+    <div>
+      <img src="images/26.png" class="photoDescription">
     </div>
+    <hr class="separation">
+    <div class="description">
+      <p>Bienvenue</p>
+      <article>
+        Je suis lola,
+        <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur impedit, quaerat distinctio vero ut dolore
+        assumenda. Tenetur quae placeat eveniet hic, at dolorem ullam temporibus consectetur pariatur, excepturi nisi. Doloribus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Praesentium architecto rerum aliquid consectetur possimus,
+        voluptas eligendi iusto impedit accusantium sapiente, fuga reiciendis facilis nihil provident mollitia doloremque
+        quod, vero odit?
+      </article>
+    </div>
+    <hr class="separation">
+    <div class="informationsContact">
+      <p><strong>Email :</strong> Lolaamsellem@gmail.com</p>
+      <p><strong>Téléphone :</strong> 0612345678</p>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <div class="footer">
+      <h2>Contact</h2>
+      <img class="copyright" src="images/copyright.png" alt="">
+      <h2 class="copyrightName">Lola Amsellem</h2>
+      <div class="logoRS">
+        <img src="images/facebook-logo.png" alt="facebook">
+        <img src="images/instagram-logo.png" alt="intagram">
+        <img src="images/pinterest.png" alt="pinterest">
+      </div>
+    </div>
+
+
   </footer>
 </body>
 

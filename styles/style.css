@@ -1,0 +1,224 @@
+body {
+  margin: 0;
+  text-align: center; }
+
+imgCentre {
+  display: inline-block;
+  border: 0;
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+  width: 20%;
+  margin-left: 20px; }
+
+.content1 {
+  text-align: center;
+  margin-top: 50px; }
+
+.content2 {
+  margin-top: -40px;
+  text-align: center; }
+
+.imgCentre:hover {
+  opacity: 0.8;
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.5);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.5);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.5);
+  transition: all 200ms ease-in;
+  transform: scale(1.2); }
+
+.contentGlobal h1 {
+  margin: 0;
+  padding-top: 100px;
+  font-size: 90px;
+  font-family: "Times New Roman",serif;
+  color: red; }
+
+video#bgvid {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url(polina.jpg) no-repeat;
+  background-size: 100%;
+  margin-top: 900px; }
+
+/* HEADER ACCUEIL */
+.header {
+  border-bottom: solid 5px #E6C3C1;
+  background-color: white;
+  padding-top: 1px;
+  /* to get full white background */ }
+
+/* responsive */
+.topnav {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  margin-top: 30px; }
+
+.topnav a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 21px;
+  color: black; }
+
+.topnav a:hover {
+  background-color: #FFFFFF; }
+
+.topnav .icon {
+  display: none;
+  color: black; }
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none; }
+
+  .topnav a.icon {
+    float: right;
+    display: block; } }
+@media screen and (max-width: 600px) {
+  .topnav {
+    margin-top: 30px; }
+
+  .topnav a {
+    display: none; }
+
+  .topnav.responsive {
+    position: relative; }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
+/* HEADER PAGES */
+header {
+  background: white; }
+
+#logoHeader {
+  display: inline-block;
+ /*margin-top: 10px;
+margin-bottom: 5px;*/
+  margin-right: 50%;
+  width: 20%; }
+
+#navigationHeader {
+  display: inline-block;
+  vertical-align: top;
+  /*align elements with vertical of #logoHaader*/ }
+
+header #navigationHeader .menu {
+  display: inline-block;
+  list-style: none;
+  margin-top: 0; }
+
+header #navigationHeader .menu li {
+  display: inline-block;
+  margin-left: 10px; }
+
+header #navigationHeader .menu li a {
+  font-size: 20px;
+  font-family: cursive;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: all 0.5s linear; }
+
+header #navigationHeader .menu li a:hover {
+  border-bottom: 1px whitesmoke solid; }
+
+header #navigationHeader .socialNetwork {
+  display: inline-block;
+  vertical-align: bottom;
+  /* vertical align with bottom of .menu */
+  margin-top: 30px; }
+
+header #navigationHeader .socialNetwork img {
+  width: 35%;
+  margin-right: 10px; }
+
+/*responsive*/
+.footer {
+  margin-top: 30px;
+  padding-bottom: 15px;
+  background: #FFFFFF; }
+  .footer h2 {
+    display: inline-block;
+    margin-right: 20%; }
+  .footer .copyright {
+    display: inline-block;
+    margin-left: 8%; }
+  .footer .copyrightName {
+    display: inline-block;
+    margin-left: 35px; }
+
+.logoRS {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 50px; }
+  .logoRS img {
+    margin-right: 8px; }
+
+header {
+  position: relative;
+  background-image: url(../images/rose.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-clip: border-box;
+  border-bottom: #E6C3C1;
+  padding-bottom: 440px; }
+
+main {
+  margin-bottom: 100px; }
+
+a {
+  text-decoration: none; }
+
+.logoAcceuil {
+  width: 50%; }
+
+.photoDescription {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 30%; }
+
+.description {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  margin-bottom: 25px; }
+  .description article {
+    text-align: left; }
+
+.separation {
+  width: 1000px;
+  text-align: center; }
+
+.informationsContact {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .informationsContact strong {
+    color: red; }
+
+/*# sourceMappingURL=style.css.map */
