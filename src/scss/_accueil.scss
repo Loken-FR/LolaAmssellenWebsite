@@ -1,55 +1,56 @@
-header{
- position: relative;
- background-image: url(../images/rose.png);
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: 100%;
- background-clip: border-box;
- border-bottom:#E6C3C1;
- padding-bottom: 440px;
+#accueilHeader {
+  position: relative;
+  background-image: url(../images/rose.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-clip: border-box;
+  border-bottom: #E6C3C1;
+  padding-bottom: 440px;
+  .logoAcceuil {
+    width: 50%;
+  }
 }
 
-main{
+#mainAccueil {
   margin-bottom: 100px;
+  .photoDescription {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 30%;
+  }
+  .description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    article {
+      margin: auto;
+      text-align: left;
+      width: 50%;
+    }
+  }
+  .separation {
+    width: 1000px;
+    text-align: center;
+  }
+  .informationsContact {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    strong {
+      color: red;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .resumeLola {
+      width: 100%;
+    }
+  }
 }
-
 
 a {
- text-decoration: none;
+  text-decoration: none;
 }
 
 
-.logoAcceuil {
- width: 50%;  
- 
-}
-
-.photoDescription{
- margin-top:50px;
- margin-bottom: 25px;
- width:30%;
-}
-
-.description{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-  margin-bottom: 25px;
-  article{
-    text-align: left;
-  }
-}
-
-.separation{
-  width: 1000px;
-  text-align: center;
-}
-
-.informationsContact{
-  margin-top: 25px;
-  margin-bottom: 25px;
-  strong{
-    color: red; 
-  }
-}
+/* responsive */

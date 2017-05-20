@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="accueilHeader">
     <div class="header">
       <h1>TATOUAGES ET DESSINS</h1>
       <a href="index.html"><img src="images/logoSeul.png" alt="logoAcceuil" class="logoAcceuil"></a>
@@ -31,18 +31,17 @@
           x.className = "topnav";
         }
       }
-
     </script>
   </header>
 
-  <main>
-    <div>
-      <img src="images/26.png" class="photoDescription">
+  <main id="mainAccueil">
+    <div class="">
+      <img src="images/lola.png" class="photoDescription">
     </div>
     <hr class="separation">
     <div class="description">
       <p>Bienvenue</p>
-      <article>
+      <article class="resumeLola">
         Je suis lola,
         <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur impedit, quaerat distinctio vero ut dolore
         assumenda. Tenetur quae placeat eveniet hic, at dolorem ullam temporibus consectetur pariatur, excepturi nisi. Doloribus.
@@ -52,7 +51,7 @@
       </article>
     </div>
     <hr class="separation">
-    <div class="informationsContact">
+    <div class="informationsContact col-xs-12">
       <p><strong>Email :</strong> Lolaamsellem@gmail.com</p>
       <p><strong>Téléphone :</strong> 0612345678</p>
     </div>
@@ -61,18 +60,19 @@
   <footer>
     <hr>
     <div class="footer">
-      <h2>Contact</h2>
-      <img class="copyright" src="images/copyright.png" alt="">
-      <h2 class="copyrightName">Lola Amsellem</h2>
-      <div class="logoRS">
-        <img src="images/facebook-logo.png" alt="facebook">
-        <img src="images/instagram-logo.png" alt="intagram">
-        <img src="images/pinterest.png" alt="pinterest">
+      <div class="row">
+        <h2 class="col-xs-12">Contact</h2>
+        <img class="copyright col-xs-4" src="images/copyright.png" alt="copyright">
+        <h2 class="copyrightName col-xs-8">Lola Amsellem</h2>
+        <div class="logoRS col-xs-12">
+          <img src="images/facebook-logo.png" alt="facebook">
+          <img src="images/instagram-logo.png" alt="intagram">
+          <img src="images/pinterest.png" alt="pinterest">
+        </div>
       </div>
     </div>
-
-
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>

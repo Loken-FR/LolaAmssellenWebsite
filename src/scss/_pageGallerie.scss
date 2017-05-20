@@ -1,0 +1,125 @@
+/* slider */
+
+#mainGallerie {
+  .sliderGallerie {
+    margin: 0 auto;
+    width: 100%;
+    img {
+      width: 105%;
+    }
+  }
+  .slide_viewer {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  .slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  .slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .slide:first-child {
+    display: block;
+  }
+  .slide:nth-of-type(1) {
+    background: #D7A151;
+  }
+  .slide:nth-of-type(2) {
+    background: #F4E4CD;
+  }
+  .slide:nth-of-type(3) {
+    background: #C75534;
+  }
+  .slide:nth-of-type(4) {
+    background: #D1D1D4;
+  }
+  .slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+  a.slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  .slide_btn.active,
+  .slide_btn:hover {
+    color: #428CC6;
+    cursor: pointer;
+  }
+  #hrTop {
+    margin-bottom: 25px;
+  }
+  #hrBottom {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .descriptionGallerie {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+      text-transform: uppercase;
+      color:#f23341;
+    }
+    article {
+      margin-top: 10px;
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+      width: 65%;
+    }
+  }
+}
+
+#imagesGallerie {
+  .imgGroup {
+    img {
+      width: 15%;
+      margin-top: -50px;
+      margin-right: 10px;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        opacity: 0.8;
+        position: relative;
+        -webkit-transition: all 200ms ease-in;
+        -webkit-transform: scale(1.5);
+        -ms-transition: all 200ms ease-in;
+        -ms-transform: scale(1.5);
+        -moz-transition: all 200ms ease-in;
+        -moz-transform: scale(1.5);
+        transition: all 200ms ease-in;
+        transform: scale(1.2);
+        h3 {
+          visibility: visible;
+        }
+      }
+    }
+    h3 {
+      position: absolute;
+      z-index: 2;
+      display: inline-block;
+      margin-left: 75px;
+      visibility: hidden;
+    }
+  }
+}
+
+
+/* end slider */
