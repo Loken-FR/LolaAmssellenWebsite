@@ -1,81 +1,31 @@
-/* slider */
-
 #mainGallerie {
-  .sliderGallerie {
-    margin: 0 auto;
-    width: 100%;
-    img {
-      width: 105%;
-    }
-  }
-  .slide_viewer {
-    height: 500px;
-    overflow: hidden;
-    position: relative;
-  }
-  .slide_group {
-    height: 100%;
-    position: relative;
-    width: 100%;
-  }
-  .slide {
-    display: none;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-  }
-  .slide:first-child {
-    display: block;
-  }
-  .slide:nth-of-type(1) {
-    background: #D7A151;
-  }
-  .slide:nth-of-type(2) {
-    background: #F4E4CD;
-  }
-  .slide:nth-of-type(3) {
-    background: #C75534;
-  }
-  .slide:nth-of-type(4) {
-    background: #D1D1D4;
-  }
-  .slide_buttons {
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-  }
-  a.slide_btn {
-    color: #474544;
-    font-size: 42px;
-    margin: 0 0.175em;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-  }
-  .slide_btn.active,
-  .slide_btn:hover {
-    color: #428CC6;
-    cursor: pointer;
+  #imageTitle {
+    border-radius: 10px;
+    border: 3px solid #c0392b;
   }
   #hrTop {
     margin-bottom: 25px;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
   }
   #hrBottom {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 100px;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
   }
   .descriptionGallerie {
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 100px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    h1{
+    h1 {
       text-transform: uppercase;
-      color:#f23341;
+      color: #f23341;
+      margin-bottom: 50px;
     }
     article {
       margin-top: 10px;
@@ -83,6 +33,7 @@
       margin-left: auto;
       margin-right: auto;
       width: 65%;
+      line-height: 1.5;
     }
   }
 }
@@ -120,6 +71,3 @@
     }
   }
 }
-
-
-/* end slider */

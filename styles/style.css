@@ -1,70 +1,34 @@
-/* slider */
-#mainGallerie .sliderGallerie {
-  margin: 0 auto;
-  width: 100%; }
-  #mainGallerie .sliderGallerie img {
-    width: 105%; }
-#mainGallerie .slide_viewer {
-  height: 500px;
-  overflow: hidden;
-  position: relative; }
-#mainGallerie .slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%; }
-#mainGallerie .slide {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%; }
-#mainGallerie .slide:first-child {
-  display: block; }
-#mainGallerie .slide:nth-of-type(1) {
-  background: #D7A151; }
-#mainGallerie .slide:nth-of-type(2) {
-  background: #F4E4CD; }
-#mainGallerie .slide:nth-of-type(3) {
-  background: #C75534; }
-#mainGallerie .slide:nth-of-type(4) {
-  background: #D1D1D4; }
-#mainGallerie .slide_buttons {
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center; }
-#mainGallerie a.slide_btn {
-  color: #474544;
-  font-size: 42px;
-  margin: 0 0.175em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
-#mainGallerie .slide_btn.active,
-#mainGallerie .slide_btn:hover {
-  color: #428CC6;
-  cursor: pointer; }
+#mainGallerie #imageTitle {
+  border-radius: 10px;
+  border: 3px solid #c0392b; }
 #mainGallerie #hrTop {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000; }
 #mainGallerie #hrBottom {
-  margin-top: 50px;
-  margin-bottom: 100px; }
+  margin-top: 25px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000; }
 #mainGallerie .descriptionGallerie {
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 100px;
   text-align: center;
   margin-left: auto;
   margin-right: auto; }
   #mainGallerie .descriptionGallerie h1 {
     text-transform: uppercase;
-    color: #f23341; }
+    color: #f23341;
+    margin-bottom: 50px; }
   #mainGallerie .descriptionGallerie article {
     margin-top: 10px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    width: 65%; }
+    width: 65%;
+    line-height: 1.5; }
 
 #imagesGallerie .imgGroup img {
   width: 15%;
@@ -92,7 +56,6 @@
   margin-left: 75px;
   visibility: hidden; }
 
-/* end slider */
 /* HEADER ACCUEIL */
 #accueilHeader .header {
   border-bottom: solid 5px #E6C3C1;
@@ -205,6 +168,103 @@ a {
   text-decoration: none; }
 
 /* responsive */
+#mainContact #hrTop {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000; }
+#mainContact em {
+  font-size: 20px; }
+#mainContact hr {
+  width: 15%; }
+#mainContact span {
+  color: #f23341; }
+#mainContact h2 {
+  margin: 0;
+  color: #8495a5;
+  font-size: 2.5em;
+  font-weight: 300; }
+#mainContact #contact-form {
+  max-width: 1208px;
+  max-width: 75.5rem;
+  margin: 0 auto; }
+#mainContact #contact,
+#mainContact label,
+#mainContact input[name="submit"] {
+  position: relative; }
+#mainContact label > span,
+#mainContact input,
+#mainContact textarea,
+#mainContact button {
+  box-sizing: border-box; }
+#mainContact label {
+  display: block; }
+#mainContact label > span {
+  display: none; }
+#mainContact input,
+#mainContact textarea,
+#mainContact button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font: 300 100%/1.2 Ubuntu, sans-serif; }
+#mainContact input[type="text"],
+#mainContact input[type="email"],
+#mainContact textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none; }
+#mainContact input.invalid,
+#mainContact textarea.invalid {
+  border-color: #d5144d; }
+#mainContact textarea {
+  height: 6em; }
+#mainContact input[type="submit"],
+#mainContact button {
+  background: #a7cd80;
+  color: #333; }
+#mainContact input[type="submit"]:hover,
+#mainContact button:hover {
+  background: #91b36f; }
+@media screen and (min-width: 30em) {
+  #mainContact #contact-form h2 {
+    margin-left: 26.3736%;
+    font-size: 2em;
+    line-height: 1.5; }
+  #mainContact label > span {
+    vertical-align: top;
+    display: inline-block;
+    width: 26.3736%;
+    padding: 0.5em;
+    border: 1px solid transparent;
+    text-align: right; }
+  #mainContact input,
+  #mainContact textarea,
+  #mainContact button {
+    width: 73.6263%;
+    line-height: 1.5; }
+  #mainContact textarea {
+    height: 10em; }
+  #mainContact input[type="submit"],
+  #mainContact button {
+    margin-left: 26.3736%; } }
+@media screen and (min-width: 48em) {
+  #mainContact #contact-form {
+    text-align: justify;
+    line-height: 0; }
+  #mainContact #contact-form:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  #mainContact #contact-form h2 {
+    margin-left: 17.2661%; }
+  #mainContact #contact-form form {
+    vertical-align: top;
+    display: inline-block;
+    width: 65.4676%;
+    text-align: left;
+    line-height: 1.5; } }
+
 body {
   margin: 0;
   padding: 0;
