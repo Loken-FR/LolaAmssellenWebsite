@@ -27,7 +27,7 @@ form.on('submit', function (e) {
         left: '0'
       }, 50);
   } else {
-    submit.attr('value', 'Sending...')
+    submit.attr('value', 'Envoi en cours...')
       .css({
         boxShadow: '0 0 200em 200em rgba(225, 225, 225, 0.6)',
         backgroundColor: '#ccc'
@@ -47,7 +47,7 @@ form.on('submit', function (e) {
     }, 1000);
     setTimeout(function () {
       // step 2: show thank you message after step 1
-      submit.attr('value', 'Thank you :)')
+      submit.attr('value', 'Merci !')
         .css({
           boxShadow: 'none'
         });
