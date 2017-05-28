@@ -1,59 +1,107 @@
-/* slider */
-/* end slider */
+#mainGallerie #imageTitle {
+  border-radius: 10px;
+  border: 3px solid #c0392b; }
+#mainGallerie #hrTop {
+  margin-bottom: 25px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000; }
+#mainGallerie #hrBottom {
+  margin-top: 25px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 2px;
+  background-color: #000000; }
+#mainGallerie .descriptionGallerie {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  #mainGallerie .descriptionGallerie h1 {
+    text-transform: uppercase;
+    color: #f23341;
+    margin-bottom: 50px; }
+  #mainGallerie .descriptionGallerie article {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    line-height: 1.5; }
+
+#imagesGallerie .imgGroup img {
+  width: 15%;
+  margin-top: -50px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1; }
+  #imagesGallerie .imgGroup img:hover {
+    opacity: 0.8;
+    position: relative;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.5);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.5);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.5);
+    transition: all 200ms ease-in;
+    transform: scale(1.2); }
+    #imagesGallerie .imgGroup img:hover h3 {
+      visibility: visible; }
+#imagesGallerie .imgGroup h3 {
+  position: absolute;
+  z-index: 2;
+  display: inline-block;
+  margin-left: 75px;
+  visibility: hidden; }
+
 /* HEADER ACCUEIL */
-.header {
+#accueilHeader .header {
   border-bottom: solid 5px #E6C3C1;
   background-color: white;
   padding-top: 1px;
   /* to get full white background */ }
 
 /* responsive */
-.topnav {
+#accueilHeader .topnav {
   overflow: hidden;
   background-color: #FFFFFF;
   margin-top: 30px; }
-
-.topnav a {
+#accueilHeader .topnav a {
   display: inline-block;
   text-align: center;
   padding: 14px;
   text-decoration: none;
   font-size: 21px;
   color: black; }
-
-.topnav a:hover {
+#accueilHeader .topnav a:hover {
   background-color: #FFFFFF; }
-
-.topnav .icon {
+#accueilHeader .topnav .icon {
   display: none;
   color: black; }
-
 @media screen and (max-width: 991px) {
-  .topnav a:not(:first-child) {
+  #accueilHeader .topnav a:not(:first-child) {
     display: none; }
-
-  .topnav a.icon {
+  #accueilHeader .topnav a.icon {
     float: right;
     display: block; } }
 @media screen and (max-width: 991px) {
-  .topnav {
+  #accueilHeader .topnav {
     margin-top: 30px; }
-
-  .topnav a {
+  #accueilHeader .topnav a {
     display: none; }
-
-  .topnav.responsive {
+  #accueilHeader .topnav.responsive {
     position: relative; }
-
-  .topnav.responsive .icon {
+  #accueilHeader .topnav.responsive .icon {
     position: absolute;
     top: 0;
     right: 0; }
-
-  .topnav.responsive a {
+  #accueilHeader .topnav.responsive a {
     float: none;
     display: block;
     text-align: left; } }
+
 /* HEADER OTHER PAGES */
 /*responsive*/
 .footer {
@@ -86,43 +134,131 @@
   background-clip: border-box;
   border-bottom: #E6C3C1;
   padding-bottom: 440px; }
+  #accueilHeader .logoAcceuil {
+    width: 50%; }
 
-main {
+#mainAccueil {
   margin-bottom: 100px; }
+  #mainAccueil .photoDescription {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 30%; }
+  #mainAccueil .description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; }
+    #mainAccueil .description article {
+      margin: auto;
+      text-align: left;
+      width: 50%; }
+  #mainAccueil .separation {
+    width: 1000px;
+    text-align: center; }
+  #mainAccueil .informationsContact {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    #mainAccueil .informationsContact strong {
+      color: red; }
+  @media screen and (max-width: 991px) {
+    #mainAccueil .resumeLola {
+      width: 100%; } }
 
 a {
   text-decoration: none; }
 
-.logoAcceuil {
-  width: 50%; }
-
-.photoDescription {
-  margin-top: 50px;
+/* responsive */
+#mainContact #hrTop {
   margin-bottom: 25px;
-  width: 30%; }
-
-.description {
+  width: 100%;
+  height: 2px;
+  background-color: #000000; }
+#mainContact em {
+  font-size: 20px; }
+#mainContact hr {
+  width: 15%; }
+#mainContact span {
+  color: #f23341; }
+#mainContact h2 {
+  margin: 0;
+  color: #8495a5;
+  font-size: 2.5em;
+  font-weight: 300; }
+#mainContact #contact-form {
+  max-width: 1208px;
+  max-width: 75.5rem;
+  margin: 0 auto;
   text-align: center;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px; }
-  .description article {
-    text-align: left; }
+  margin-right: auto; }
+#mainContact #contact,
+#mainContact label,
+#mainContact input[name="submit"] {
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+#mainContact label > input,
+#mainContact textarea,
+#mainContact button {
+  box-sizing: border-box; }
+#mainContact label {
+  display: block; }
+#mainContact input,
+#mainContact textarea,
+#mainContact button {
+  width: 100%;
+  padding: 0.5em;
+  border: none; }
+#mainContact input[type="text"],
+#mainContact input[type="email"],
+#mainContact textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none; }
+#mainContact input.invalid,
+#mainContact textarea.invalid {
+  border-color: #d5144d; }
+#mainContact textarea {
+  height: 6em; }
+#mainContact input[type="submit"],
+#mainContact button {
+  background: #a7cd80;
+  color: #333; }
+#mainContact input[type="submit"]:hover,
+#mainContact button:hover {
+  background: #91b36f; }
+@media screen and (min-width: 30em) {
+  #mainContact #contact-form h2 {
+    margin-left: 26.3736%;
+    font-size: 2em;
+    line-height: 1.5; }
+  #mainContact input,
+  #mainContact textarea,
+  #mainContact button {
+    line-height: 1.5; }
+  #mainContact textarea {
+    height: 10em; } }
+@media screen and (min-width: 48em) {
+  #mainContact #contact-form {
+    background-size: 100%;
+    margin-top: 75px;
+    padding: 5% 15% 12%;
+    line-height: 0;
+    background-image: url(../images/rose.png); }
+  #mainContact #contact-form:after {
+    content: '';
+    display: inline-block;
+    width: 100%; }
+  #mainContact #contact-form h2 {
+    margin-left: 17.2661%; }
+  #mainContact #contact-form form {
+    vertical-align: top;
+    display: inline-block;
+    width: 65.4676%;
+    text-align: left;
+    line-height: 1.5; } }
 
-.separation {
-  width: 1000px;
-  text-align: center; }
-
-.informationsContact {
-  margin-top: 25px;
-  margin-bottom: 25px; }
-  .informationsContact strong {
-    color: red; }
-
-/* responsive */
-@media screen and (max-width: 991px) {
-  .resumeLola {
-    width: 100%; } }
 body {
   margin: 0;
   padding: 0;

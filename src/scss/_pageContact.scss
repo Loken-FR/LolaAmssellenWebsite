@@ -1,12 +1,9 @@
   #mainContact {
-    #hrTop {
-      margin-bottom: 25px;
-      width: 100%;
-      height: 2px;
-      background-color: #000000;
-    }
     em {
       font-size: 20px;
+    }
+    #hrTop{
+      margin-top: 50px;
     }
     hr {
       width: 15%;
@@ -14,16 +11,10 @@
     span {
       color: #f23341;
     }
-    h2 {
-      margin: 0;
-      color: #8495a5;
-      font-size: 2.5em;
-      font-weight: 300;
-    }
     #contact-form {
       max-width: 1208px;
       max-width: 75.5rem;
-      margin: 0 auto;
+      margin: 75px auto;
       text-align: center;
       margin-left: auto;
       margin-right: auto;
@@ -55,25 +46,24 @@
     input[type="email"],
     textarea {
       margin: 0 0 1em;
-      border: 1px solid #ccc;
+      border: 2px solid #000000;
       outline: none;
     }
     input.invalid,
     textarea.invalid {
-      border-color: #d5144d;
+      border-color: #f23341;
     }
     textarea {
       height: 6em;
+      font-family: 'arial';
     }
     input[type="submit"],
     button {
-      background: #a7cd80;
-      color: #333;
+      background: #FFFFFF;
+      border: 2px solid #000000;
+      font-family: 'arial';
     }
-    input[type="submit"]:hover,
-    button:hover {
-      background: #91b36f;
-    }
+
     @media screen and (min-width: 30em) {
       #contact-form h2 {
         margin-left: 26.3736%;
@@ -92,7 +82,6 @@
     @media screen and (min-width: 48em) {
       #contact-form {
         background-size: 100%;
-        margin-top: 75px;
         padding: 5% 15% 12%;
         line-height: 0;
         background-image: url(../images/rose.png);
@@ -101,9 +90,6 @@
         content: '';
         display: inline-block;
         width: 100%;
-      }
-      #contact-form h2 {
-        margin-left: 17.2661%;
       }
       #contact-form form {
         vertical-align: top;
