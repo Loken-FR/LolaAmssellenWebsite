@@ -1,0 +1,42 @@
+footer {
+  img {
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .footer {
+    margin-top: 15px;
+    .categorieFooter {
+      margin-bottom: 5px;
+      .copyright {
+        display: inline-block;
+        width: 15px;
+        margin-right: 5px;
+      }
+      a {
+        color: #000000;
+      }
+      p {
+        display: inline-block;
+        margin-right: 5px;
+        font-size: 10px;
+      }
+      h2 {
+        display: inline-block;
+        margin-right: 5px;
+        margin-left: 5px;
+        font-size: 10px;
+      }
+    }
+  }
+  .reseauxSociaux{
+    margin-bottom: 15px;
+  }
+  .hrFooter {
+    width: 100%;
+    height: 2px;
+    background: black;
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+}

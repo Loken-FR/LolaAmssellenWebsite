@@ -160,6 +160,38 @@
   margin-top: 10px;
   opacity: 0.8; }
 
+footer img {
+  width: 50px;
+  margin-left: 5px;
+  margin-right: 5px; }
+footer .footer {
+  margin-top: 15px; }
+  footer .footer .categorieFooter {
+    margin-bottom: 5px; }
+    footer .footer .categorieFooter .copyright {
+      display: inline-block;
+      width: 15px;
+      margin-right: 5px; }
+    footer .footer .categorieFooter a {
+      color: #000000; }
+    footer .footer .categorieFooter p {
+      display: inline-block;
+      margin-right: 5px;
+      font-size: 10px; }
+    footer .footer .categorieFooter h2 {
+      display: inline-block;
+      margin-right: 5px;
+      margin-left: 5px;
+      font-size: 10px; }
+footer .reseauxSociaux {
+  margin-bottom: 15px; }
+footer .hrFooter {
+  width: 100%;
+  height: 2px;
+  background: black;
+  margin-top: 10px;
+  opacity: 0.8; }
+
 #accueilHeader {
   position: relative;
   background-image: url(../images/rose.png);
@@ -172,32 +204,30 @@
   #accueilHeader .logoAcceuil {
     width: 50%; }
 
-#mainAccueil {
-  margin-bottom: 100px; }
-  #mainAccueil .photoDescription {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    width: 30%; }
-  #mainAccueil .description {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 25px; }
-    #mainAccueil .description article {
-      margin: auto;
-      text-align: left;
-      width: 50%; }
-  #mainAccueil .separation {
-    width: 1000px;
-    text-align: center; }
-  #mainAccueil .informationsContact {
-    margin-top: 25px;
-    margin-bottom: 25px; }
-    #mainAccueil .informationsContact strong {
-      color: red; }
-  @media screen and (max-width: 991px) {
-    #mainAccueil .resumeLola {
-      width: 100%; } }
+#mainAccueil .photoDescription {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 30%; }
+#mainAccueil .description {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px; }
+  #mainAccueil .description article {
+    margin: auto;
+    text-align: left;
+    width: 50%; }
+#mainAccueil .separation {
+  width: 1000px;
+  text-align: center; }
+#mainAccueil .informationsContact {
+  margin-top: 25px;
+  margin-bottom: 50px; }
+  #mainAccueil .informationsContact strong {
+    color: red; }
+@media screen and (max-width: 991px) {
+  #mainAccueil .resumeLola {
+    width: 100%; } }
 
 a {
   text-decoration: none; }
@@ -282,6 +312,12 @@ a {
     text-align: left;
     line-height: 1.5; } }
 
+@media screen and (max-width: 48em) {
+  #contact-form {
+    background-size: 100%;
+    padding: 5% 15% 10%;
+    line-height: 0;
+    background-image: url(../images/rose.png); } }
 #mainInspiration h1 {
   text-transform: uppercase;
   margin-top: 50px;

@@ -2,7 +2,7 @@
     em {
       font-size: 20px;
     }
-    #hrTop{
+    #hrTop {
       margin-top: 50px;
     }
     hr {
@@ -63,7 +63,6 @@
       border: 2px solid #000000;
       font-family: 'arial';
     }
-
     @media screen and (min-width: 30em) {
       #contact-form h2 {
         margin-left: 26.3736%;
@@ -99,4 +98,12 @@
         line-height: 1.5;
       }
     }
+  }
+  @media screen and (max-width: 48em){
+      #contact-form {
+        background-size: 100%;
+        padding: 5% 15% 10%;
+        line-height: 0;
+        background-image: url(../images/rose.png);
+      }
   }

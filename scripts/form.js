@@ -5,7 +5,7 @@ form.on('submit', function (e) {
   e.preventDefault();
 
   // avoid spamming buttons
-  if (submit.attr('value') !== 'Send')
+  if (submit.attr('value') !== 'Envoyer')
     return;
 
   var valid = true;
@@ -62,7 +62,7 @@ form.on('submit', function (e) {
         .animate({
           opacity: '1'
         }, 500);
-      submit.attr('value', 'Send')
+      submit.attr('value', 'Envoyer')
         .css({
           backgroundColor: ''
         });
