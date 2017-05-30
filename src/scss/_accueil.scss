@@ -29,9 +29,12 @@
       width: 50%;
     }
   }
-  .separation {
-    width: 1000px;
+  .limit {
     text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 1px;
+    background-color: #000000;
   }
   .informationsContact {
     margin-top: 25px;
