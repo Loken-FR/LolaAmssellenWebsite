@@ -1,12 +1,14 @@
 #mainInspiration {
-  h1{
+  margin-bottom: 100px;
+  h1 {
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 90px;
     margin-bottom: 50px;
   }
-  span{
+  span {
     color: #f23341;
   }
+  /* slider */
   .sliderInspiration {
     margin: 0 auto;
     width: 100%;
@@ -31,18 +33,23 @@
     display: block;
   }
   .slide:nth-of-type(1) {
-    background-image: url(../images/Lichtenstein.png);
-    background-size: 100%;
+    img {
+      width: 100%;
+    }
   }
   .slide:nth-of-type(2) {
-    background-image:url(../images/Picasso.png);
-    background-size: 100%;
+    img {
+      width: 100%;
+    }
   }
   .slide:nth-of-type(3) {
-    background-image:url(../images/NikiDeStPhalle.png);
-    background-size: 100%;
+    img {
+      width: 100%;
+    }
   }
-  
+  .sliderBtn {
+    margin-bottom: 100px;
+  }
   .slide_buttons {
     left: 0;
     position: absolute;
@@ -65,11 +72,14 @@
     cursor: pointer;
   }
   .directional_nav {
-    height: 200px;
     margin: 0 auto;
     max-width: 100%;
     position: relative;
     top: -340px;
+  }
+  .nav-btn {
+    height: 250px;
+    width: 175px;
   }
   .previous_btn {
     bottom: 0;
@@ -102,41 +112,63 @@
     opacity: 1;
   }
   @media only screen and (max-width: 767px) {
+    .slide_buttons {
+      display: none;
+    }
+    .slide_viewer {
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+    .nav-btn {
+      height: 125px;
+      width: 75px;
+    }
     .previous_btn {
       left: 50px;
     }
     .next_btn {
       right: 50px;
     }
-  
+  }
+  @media only screen and (max-width: 1023px) {
+    .nav-btn {
+      height: 125px;
+      width: 100px;
+    }
+    .slide_buttons {
+      bottom: 475px;
+    }
+    .sliderBtn {
+      margin-bottom: -175px;
+    }
+  }
+  .imgTest {
+    width: 450px;
+    height: 450px;
+  }
+  .imgTest1 {
+    width: 450px;
+    height: 450px;
+  }
+  .underContainer1 {
+    margin-top: 20px;
+    p {
+      margin-top: 150px;
+    }
+  }
+  .underContainer2 {
+    margin-top: 20px;
+    p {
+      margin-top: 150px;
+      margin-bottom: 150px;
+    }
+  }
+  .underContainer3 {
+    margin-top: 20px;
+    p {
+      margin-top: 150px;
+      margin-bottom: 150px;
+    }
   }
 }
-
-
-.imgTest {
-  width:100%;
- }
-.imgTest1 {
-  width:100%;
- opacity:2;
- }
- 
-.underContainer1{
- p{
-  margin-top: 150px;
- }
- }
- 
-.underContainer2 {
- margin-top:20px;
- p{
-  margin-top:250px;
- }
-}
- .underContainer3 {
- margin-top:20px;
- p{
-  margin-top:250px;
- }
-}
- 

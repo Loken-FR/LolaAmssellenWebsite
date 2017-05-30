@@ -1,7 +1,8 @@
 #mainGallerie #imageTitle {
   border-radius: 10px;
   border: 3px solid #c0392b;
-  margin-top: 25px; }
+  margin-top: 90px;
+  width: 90%; }
 #mainGallerie #hrBottom {
   margin-top: 25px;
   margin-bottom: 100px;
@@ -110,11 +111,16 @@
     width: 20%;
     display: inline-block;
     float: left;
-    margin-top: 13px;
+    margin-top: 10px;
     margin-left: 10px; }
   .pagesHeader .topnav {
     background-color: white;
-    overflow: hidden; }
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    border-style: outset;
+    top: 0px;
+    z-index: 4; }
   .pagesHeader .topnav a {
     float: right;
     display: block;
@@ -126,8 +132,8 @@
     margin-top: 10px;
     font-family: "Vonique64"; }
   .pagesHeader .topnav a:hover {
-    background-color: #ddd;
-    color: red; }
+    color: red;
+    border-top: red solid 5px; }
   .pagesHeader .topnav .icon {
     display: none; }
   @media screen and (max-width: 600px) {
@@ -235,7 +241,7 @@ a {
 /* responsive */
 #mainContact em {
   font-size: 20px; }
-#mainContact #hrTop {
+#mainContact #hrTopContact {
   margin-top: 50px; }
 #mainContact hr {
   width: 15%; }
@@ -318,117 +324,138 @@ a {
     padding: 5% 15% 10%;
     line-height: 0;
     background-image: url(../images/rose.png); } }
-#mainInspiration h1 {
-  text-transform: uppercase;
-  margin-top: 50px;
-  margin-bottom: 50px; }
-#mainInspiration span {
-  color: #f23341; }
-#mainInspiration .sliderInspiration {
-  margin: 0 auto;
-  width: 100%; }
-#mainInspiration .slide_viewer {
-  height: 500px;
-  overflow: hidden;
-  position: relative; }
-#mainInspiration .slide_group {
-  height: 100%;
-  position: relative;
-  width: 100%; }
-#mainInspiration .slide {
-  display: none;
-  height: 100%;
-  position: absolute;
-  width: 100%; }
-#mainInspiration .slide:first-child {
-  display: block; }
-#mainInspiration .slide:nth-of-type(1) {
-  background-image: url(../images/Lichtenstein.png);
-  background-size: 100%; }
-#mainInspiration .slide:nth-of-type(2) {
-  background-image: url(../images/Picasso.png);
-  background-size: 100%; }
-#mainInspiration .slide:nth-of-type(3) {
-  background-image: url(../images/NikiDeStPhalle.png);
-  background-size: 100%; }
-#mainInspiration .slide_buttons {
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center; }
-#mainInspiration a.slide_btn {
-  color: #474544;
-  font-size: 42px;
-  margin: 0 0.175em;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out; }
-#mainInspiration .slide_btn.active,
-#mainInspiration .slide_btn:hover {
-  color: #428CC6;
-  cursor: pointer; }
-#mainInspiration .directional_nav {
-  height: 200px;
-  margin: 0 auto;
-  max-width: 100%;
-  position: relative;
-  top: -340px; }
-#mainInspiration .previous_btn {
-  bottom: 0;
-  left: 100px;
-  margin: auto;
-  position: absolute;
-  top: 0; }
-#mainInspiration .next_btn {
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  right: 100px;
-  top: 0; }
-#mainInspiration .previous_btn,
-#mainInspiration .next_btn {
-  cursor: pointer;
-  height: 65px;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  -moz-transition: opacity 0.4s ease-in-out;
-  -ms-transition: opacity 0.4s ease-in-out;
-  -o-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-  width: 65px; }
-#mainInspiration .previous_btn:hover,
-#mainInspiration .next_btn:hover {
-  opacity: 1; }
-@media only screen and (max-width: 767px) {
+#mainInspiration {
+  margin-bottom: 100px;
+  /* slider */ }
+  #mainInspiration h1 {
+    text-transform: uppercase;
+    margin-top: 90px;
+    margin-bottom: 50px; }
+  #mainInspiration span {
+    color: #f23341; }
+  #mainInspiration .sliderInspiration {
+    margin: 0 auto;
+    width: 100%; }
+  #mainInspiration .slide_viewer {
+    height: 500px;
+    overflow: hidden;
+    position: relative; }
+  #mainInspiration .slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%; }
+  #mainInspiration .slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+  #mainInspiration .slide:first-child {
+    display: block; }
+  #mainInspiration .slide:nth-of-type(1) img {
+    width: 100%; }
+  #mainInspiration .slide:nth-of-type(2) img {
+    width: 100%; }
+  #mainInspiration .slide:nth-of-type(3) img {
+    width: 100%; }
+  #mainInspiration .sliderBtn {
+    margin-bottom: 100px; }
+  #mainInspiration .slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center; }
+  #mainInspiration a.slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  #mainInspiration .slide_btn.active,
+  #mainInspiration .slide_btn:hover {
+    color: #428CC6;
+    cursor: pointer; }
+  #mainInspiration .directional_nav {
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+    top: -340px; }
+  #mainInspiration .nav-btn {
+    height: 250px;
+    width: 175px; }
   #mainInspiration .previous_btn {
-    left: 50px; }
+    bottom: 0;
+    left: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0; }
   #mainInspiration .next_btn {
-    right: 50px; } }
-
-.imgTest {
-  width: 100%; }
-
-.imgTest1 {
-  width: 100%;
-  opacity: 2; }
-
-.underContainer1 p {
-  margin-top: 150px; }
-
-.underContainer2 {
-  margin-top: 20px; }
-  .underContainer2 p {
-    margin-top: 250px; }
-
-.underContainer3 {
-  margin-top: 20px; }
-  .underContainer3 p {
-    margin-top: 250px; }
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 100px;
+    top: 0; }
+  #mainInspiration .previous_btn,
+  #mainInspiration .next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px; }
+  #mainInspiration .previous_btn:hover,
+  #mainInspiration .next_btn:hover {
+    opacity: 1; }
+  @media only screen and (max-width: 767px) {
+    #mainInspiration .slide_buttons {
+      display: none; }
+    #mainInspiration .slide_viewer {
+      height: 400px;
+      overflow: hidden;
+      position: relative; }
+    #mainInspiration .nav-btn {
+      height: 125px;
+      width: 75px; }
+    #mainInspiration .previous_btn {
+      left: 50px; }
+    #mainInspiration .next_btn {
+      right: 50px; } }
+  @media only screen and (max-width: 1023px) {
+    #mainInspiration .nav-btn {
+      height: 125px;
+      width: 100px; }
+    #mainInspiration .slide_buttons {
+      bottom: 475px; }
+    #mainInspiration .sliderBtn {
+      margin-bottom: -175px; } }
+  #mainInspiration .imgTest {
+    width: 450px;
+    height: 450px; }
+  #mainInspiration .imgTest1 {
+    width: 450px;
+    height: 450px; }
+  #mainInspiration .underContainer1 {
+    margin-top: 20px; }
+    #mainInspiration .underContainer1 p {
+      margin-top: 150px; }
+  #mainInspiration .underContainer2 {
+    margin-top: 20px; }
+    #mainInspiration .underContainer2 p {
+      margin-top: 150px;
+      margin-bottom: 150px; }
+  #mainInspiration .underContainer3 {
+    margin-top: 20px; }
+    #mainInspiration .underContainer3 p {
+      margin-top: 150px;
+      margin-bottom: 150px; }
 
 .gif img {
-  margin-top: 20px;
+  margin-top: 90px;
   margin-bottom: 10px;
   width: 85%;
   height: 50%;

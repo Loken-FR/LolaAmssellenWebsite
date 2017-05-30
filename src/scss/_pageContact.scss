@@ -2,7 +2,7 @@
     em {
       font-size: 20px;
     }
-    #hrTop {
+    #hrTopContact {
       margin-top: 50px;
     }
     hr {
@@ -99,11 +99,12 @@
       }
     }
   }
-  @media screen and (max-width: 48em){
-      #contact-form {
-        background-size: 100%;
-        padding: 5% 15% 10%;
-        line-height: 0;
-        background-image: url(../images/rose.png);
-      }
+
+  @media screen and (max-width: 48em) {
+    #contact-form {
+      background-size: 100%;
+      padding: 5% 15% 10%;
+      line-height: 0;
+      background-image: url(../images/rose.png);
+    }
   }

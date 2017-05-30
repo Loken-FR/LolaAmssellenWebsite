@@ -73,13 +73,18 @@
     width: 20%;
     display: inline-block;
     float: left;
-    margin-top: 13px;
+    margin-top: 10px;
     margin-left: 10px;
   }
   /* Add a black background color to the top navigation */
   .topnav {
     background-color: white;
     overflow: hidden;
+   position:fixed;
+   width:100%;
+   border-style: outset;
+   top:0px;
+   z-index:4;
   }
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -95,8 +100,9 @@
   }
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ddd;
+    
     color: red;
+   border-top:red solid 5px;
   }
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
