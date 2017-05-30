@@ -13,15 +13,19 @@
     background-color: #000000;
   }
   .descriptionGallerie {
-    margin-top: 80px;
+    margin-top: 50px;
     margin-bottom: 100px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+   font-family: "Vonique64";
     h1 {
       text-transform: uppercase;
       color: #f23341;
       margin-bottom: 50px;
+     margin-top:50px;
+     
+     
     }
     article {
       margin-top: 10px;
@@ -35,6 +39,7 @@
 }
 
 #imagesGallerie {
+ margin-bottom:50px;
   .imgGroup {
     img {
       width: 15%;
@@ -52,18 +57,13 @@
         -moz-transition: all 200ms ease-in;
         -moz-transform: scale(1.5);
         transition: all 200ms ease-in;
-        transform: scale(1.2);
-        h3 {
-          visibility: visible;
-        }
+        transform: scale(1.1);
+        a{
+    text-decoration: none;
+   }
       }
-    }
-    h3 {
-      position: absolute;
-      z-index: 2;
-      display: inline-block;
-      margin-left: 75px;
-      visibility: hidden;
-    }
+   }
+   
   }
 }
+

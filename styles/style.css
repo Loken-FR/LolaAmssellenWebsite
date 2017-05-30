@@ -10,15 +10,17 @@
   height: 2px;
   background-color: #000000; }
 #mainGallerie .descriptionGallerie {
-  margin-top: 80px;
+  margin-top: 50px;
   margin-bottom: 100px;
   text-align: center;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  font-family: "Vonique64"; }
   #mainGallerie .descriptionGallerie h1 {
     text-transform: uppercase;
     color: #f23341;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    margin-top: 50px; }
   #mainGallerie .descriptionGallerie article {
     margin-top: 10px;
     text-align: left;
@@ -27,31 +29,27 @@
     width: 65%;
     line-height: 1.5; }
 
-#imagesGallerie .imgGroup img {
-  width: 15%;
-  margin-top: -50px;
-  margin-right: 10px;
-  position: relative;
-  z-index: 1; }
-  #imagesGallerie .imgGroup img:hover {
-    opacity: 0.8;
+#imagesGallerie {
+  margin-bottom: 50px; }
+  #imagesGallerie .imgGroup img {
+    width: 15%;
+    margin-top: -50px;
+    margin-right: 10px;
     position: relative;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.5);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.5);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.5);
-    transition: all 200ms ease-in;
-    transform: scale(1.2); }
-    #imagesGallerie .imgGroup img:hover h3 {
-      visibility: visible; }
-#imagesGallerie .imgGroup h3 {
-  position: absolute;
-  z-index: 2;
-  display: inline-block;
-  margin-left: 75px;
-  visibility: hidden; }
+    z-index: 1; }
+    #imagesGallerie .imgGroup img:hover {
+      opacity: 0.8;
+      position: relative;
+      -webkit-transition: all 200ms ease-in;
+      -webkit-transform: scale(1.5);
+      -ms-transition: all 200ms ease-in;
+      -ms-transform: scale(1.5);
+      -moz-transition: all 200ms ease-in;
+      -moz-transform: scale(1.5);
+      transition: all 200ms ease-in;
+      transform: scale(1.1); }
+      #imagesGallerie .imgGroup img:hover a {
+        text-decoration: none; }
 
 /* HEADER ACCUEIL */
 #accueilHeader .header {
@@ -71,9 +69,12 @@
   padding: 14px;
   text-decoration: none;
   font-size: 21px;
-  color: black; }
+  color: black;
+  font-family: "Vonique64"; }
 #accueilHeader .topnav a:hover {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  border-bottom: red 3px solid;
+  opacity: 0.5; }
 #accueilHeader .topnav .icon {
   display: none;
   color: black; }
@@ -133,7 +134,7 @@
     font-family: "Vonique64"; }
   .pagesHeader .topnav a:hover {
     color: red;
-    border-top: red solid 5px; }
+    border-top: red solid 3px; }
   .pagesHeader .topnav .icon {
     display: none; }
   @media screen and (max-width: 600px) {
@@ -445,17 +446,23 @@ a {
   #mainInspiration .underContainer1 {
     margin-top: 20px; }
     #mainInspiration .underContainer1 p {
-      margin-top: 150px; }
+      margin-top: 150px;
+      font-family: "VitraFutura-Light","Futura";
+      font-size: 20px; }
   #mainInspiration .underContainer2 {
     margin-top: 20px; }
     #mainInspiration .underContainer2 p {
       margin-top: 150px;
-      margin-bottom: 150px; }
+      margin-bottom: 150px;
+      font-family: "VitraFutura-Light","Futura";
+      font-size: 20px; }
   #mainInspiration .underContainer3 {
     margin-top: 20px; }
     #mainInspiration .underContainer3 p {
       margin-top: 150px;
-      margin-bottom: 150px; }
+      margin-bottom: 150px;
+      font-family: "VitraFutura-Light","Futura";
+      font-size: 20px; }
 
 .gif img {
   margin-top: 90px;
