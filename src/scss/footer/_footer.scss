@@ -5,6 +5,10 @@ footer {
     width: 50px;
     margin-left: 5px;
     margin-right: 5px;
+    &:hover{
+      background-color: #f23341;
+      border-radius: 50px;
+    }
   }
   .footer {
     margin-top: 15px;
@@ -35,7 +39,6 @@ footer {
     width: 100%;
     height: 2px;
     background: black;
-    margin-top: 10px;
     opacity: 0.8;
   }
 }
