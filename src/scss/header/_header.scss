@@ -17,13 +17,14 @@
     margin-top: 30px;
   }
   .topnav a {
+    border-bottom: 3px #FFFFFF solid;
     display: inline-block;
     text-align: center;
     padding: 14px;
     text-decoration: none;
     font-size: 21px;
     color: black;
-   font-family: "Vonique64"
+   font-family: "Vonique";
   }
   .topnav a:hover {
     background-color: #FFFFFF;
@@ -91,6 +92,7 @@
   }
   /* Style the links inside the navigation bar */
   .topnav a {
+    border-top: 3px #FFFFFF solid;
     float: right;
     display: block;
     color: #25373D;
@@ -99,7 +101,7 @@
     text-decoration: none;
     font-size: 17px;
     margin-top: 10px;
-    font-family: "Vonique64";
+    font-family: "Vonique";
   }
   /* Change the color of links on hover */
   .topnav a:hover {
@@ -114,7 +116,7 @@
 
 /*responsive */
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .topnav a:not(:first-child) {
       display: none;
     }

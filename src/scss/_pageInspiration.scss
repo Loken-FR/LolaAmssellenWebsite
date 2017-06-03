@@ -1,16 +1,16 @@
 #mainInspiration {
-  margin-bottom: 100px;
   h1 {
     text-transform: uppercase;
     margin-top: 90px;
     margin-bottom: 50px;
+    font-family: "Futura";
   }
   span {
     color: #f23341;
   }
   /* slider */
   .sliderInspiration {
-    margin: 0 auto;
+    margin-top: 60px;
     width: 100%;
   }
   .slide_viewer {
@@ -55,8 +55,10 @@
     position: absolute;
     right: 0;
     text-align: center;
+    margin-top: -50px;
   }
   a.slide_btn {
+    text-decoration: none;
     color: #474544;
     font-size: 42px;
     margin: 0 0.175em;
@@ -75,7 +77,7 @@
     margin: 0 auto;
     max-width: 100%;
     position: relative;
-    top: -340px;
+    top: -300px;
   }
   .nav-btn {
     height: 250px;
@@ -112,6 +114,12 @@
     opacity: 1;
   }
   @media only screen and (max-width: 767px) {
+    .directional_nav {
+      top: -220px;
+    }
+    .sliderInspiration {
+      margin-bottom: -400px;
+    }
     .slide_buttons {
       display: none;
     }
@@ -121,60 +129,128 @@
       position: relative;
     }
     .nav-btn {
-      height: 125px;
-      width: 75px;
+      height: 100px;
+      width: 50px;
     }
     .previous_btn {
-      left: 50px;
+      left: 20px;
     }
     .next_btn {
-      right: 50px;
+      right: 20px;
     }
   }
-  @media only screen and (max-width: 1023px) {
-    .nav-btn {
-      height: 125px;
-      width: 100px;
+  @media only screen and (max-width: 1279px) {
+    .directional_nav {
+      top: -250px;
+    }
+    .sliderInspiration {
+      margin-bottom: -120px;
+    }
+    .slide_buttons {
+      display: none;
     }
     .slide_buttons {
       bottom: 475px;
     }
-    .sliderBtn {
-      margin-bottom: -175px;
+    .nav-btn {
+      height: 200px;
+      width: 100px;
+    }
+    .previous_btn {
+      left: 20px;
+    }
+    .next_btn {
+      right: 20px;
     }
   }
-  .imgTest {
-    width: 450px;
-    height: 450px;
+  p {
+    font-family: "Futura";
+    font-size: 20px;
   }
-  .imgTest1 {
-    width: 450px;
-    height: 450px;
+  p {
+    font-family: "Futura";
+    font-size: 20px;
   }
-  .underContainer1 {
-    margin-top: 20px;
-    p {
-      margin-top: 150px;
-     font-family: "VitraFutura-Light","Futura";
-     font-size:20px;
-    }
+  p {
+    font-family: "Futura";
+    font-size: 20px;
   }
-  .underContainer2 {
-    margin-top: 20px;
-    p {
-      margin-top: 150px;
-      margin-bottom: 150px;
-     font-family: "VitraFutura-Light","Futura";
-     font-size:20px;
-    }
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-  .underContainer3 {
-    margin-top: 20px;
-    p {
-      margin-top: 150px;
-      margin-bottom: 150px;
-     font-family: "VitraFutura-Light","Futura";
-     font-size:20px;
+  .bgimg-1 {
+    background-image: url("../images/Alexander-Calder.jpg");
+    min-height: 500px;
+  }
+  .bgimg-2 {
+    background-image: url("../images/Niki%20de%20Saint%20Phalle.JPG");
+    min-height: 500px;
+  }
+  .bgimg-3 {
+    background-image: url("../images/pablo-picasso.jpg");
+    min-height: 550px;
+  }
+  .caption {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .caption1 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .caption2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  .caption strong.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .caption1 strong.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  .caption2 strong.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: scroll;
     }
   }
 }

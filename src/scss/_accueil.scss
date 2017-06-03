@@ -3,16 +3,22 @@
   background-image: url(../images/rose.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-position: center;
+  background-size: cover;
   background-clip: border-box;
   border-bottom: #E6C3C1;
   padding-bottom: 440px;
   .logoAcceuil {
     width: 50%;
   }
+  h1{
+    font-family: "Futura";
+    font-size: 25px;
+  }
 }
 
 #mainAccueil {
+  font-family: "Futura";
   .photoDescription {
     margin-top: 50px;
     margin-bottom: 25px;
@@ -23,10 +29,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
+    h2 {
+      color: #f23341;
+    }
     article {
       margin: auto;
       text-align: left;
-      width: 50%;
+      width: 75%;
     }
   }
   .limit {
@@ -39,6 +48,15 @@
   .informationsContact {
     margin-top: 25px;
     margin-bottom: 50px;
+    h4 {
+      font-size: 15px;
+      opacity: 0.5;
+    }
+    p {
+      display: inline-block;
+      margin-right: 20px;
+      margin-left: 20px;
+    }
     strong {
       color: red;
     }

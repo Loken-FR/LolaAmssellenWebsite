@@ -1,4 +1,22 @@
   #mainContact {
+    font-family: "Futura";
+    .informationsLola {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      h4 {
+        font-size: 15px;
+        opacity: 0.5;
+      }
+      p {
+        display: inline-block;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 18px;
+      }
+      strong {
+        color: red;
+      }
+    }
     em {
       font-size: 20px;
     }
