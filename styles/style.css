@@ -149,7 +149,7 @@
       text-decoration: none; }
     .pagesHeader .logoLOLA {
       width: 30%; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .pagesHeader .topnav.responsive {
       position: relative; }
     .pagesHeader .topnav.responsive a.icon {
