@@ -18,7 +18,8 @@
     #mainGallerie #descriptionGallerie h1 {
       text-transform: uppercase;
       margin-bottom: 50px;
-      margin-top: 50px; }
+      margin-top: 50px;
+      text-align: center; }
       #mainGallerie #descriptionGallerie h1 span {
         color: #f23341; }
     #mainGallerie #descriptionGallerie article {
