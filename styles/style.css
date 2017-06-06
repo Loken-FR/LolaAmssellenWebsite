@@ -238,7 +238,8 @@ footer {
     margin-right: auto;
     margin-bottom: 25px; }
     #mainAccueil .description h2 {
-      color: #f23341; }
+      color: #f23341;
+      text-align: center; }
     #mainAccueil .description article {
       margin: auto;
       text-align: left;

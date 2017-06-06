@@ -1,4 +1,4 @@
-#accueilHeader {
+#accueilHeader{
   position: relative;
   background-image: url(../images/rose.jpg);
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   }
 }
 
-#mainAccueil {
+#mainAccueil{
   font-family: "Futura";
   .photoDescription {
     margin-top: 50px;
@@ -31,6 +31,7 @@
     margin-bottom: 25px;
     h2 {
       color: #f23341;
+      text-align: center;
     }
     article {
       margin: auto;
